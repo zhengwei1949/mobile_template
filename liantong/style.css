@@ -1,0 +1,72 @@
+/* ============================================================
+   样式重置 
+   ============================================================ */
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,legend,input,select,textarea,button,th,td{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,dl,ol{list-style:none;}
+img,fieldset,input[type="submit"]{border:0 none;}
+img{display:inline-block;overflow:hidden;vertical-align:top;}
+em{font-style:normal;}
+strong{font-weight:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+button,input[type="button"]{cursor:pointer;border:0 none;}
+textarea{word-wrap:break-word;resize:none;}  /* word-wrap for opera, resize for webkit */
+menu{margin:0;padding:0;}
+body{-webkit-user-select:none;-webkit-text-size-adjust:none!important;font-family:Helvetica;}
+input[type="number"]{-webkit-user-select:text;}
+a,button,input,img{-webkit-touch-callout:none;}/* 1.ios 长按时不触发系统的菜�? 2.禁止长按时下载图�? */
+input,select,textarea{outline:none;}
+select{-webkit-appearance:none;appearance:none;}
+
+/* 去除android4.0以下 a/button/input标签被点击时产生的边�? 因为边框引起了不少bug */
+a,button,input,select{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+/* Android4.0下不识别选择�?-webkit-transform-3d 使用它可做Android4.0下版本兼�? */
+@media all and (-webkit-transform-3d){
+/* android4.0+ ios4+ 恢复按钮被点击时产生的效�? */
+/*a,button,input{-webkit-tap-highlight-color:rgba(130,130,130,.52);}*/
+a,button,input,select{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+} 
+html,body{height:100%;}
+a{text-decoration:none;} 
+
+.flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} 
+.flex-v{-webkit-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;} 
+.flex-1{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;} 
+.flex-align-center{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;} 
+.flex-pack-center{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;} 
+.flex-pack-justify{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}
+
+/* ============================================================
+   公用样式
+   ============================================================ */
+body{background: #AACC5E;}
+.banner,.banner img{width: 100%;}
+.page{position: relative;width: 320px;height: 100%;overflow: hidden;background-color: #AACC5E;}
+article{padding: 4px 18px 0;}
+.process-box{background: #FFFFFF;width: 100%;border-radius: 5px;margin-bottom: 8px;overflow: hidden;box-shadow: 0 4px 0 #D0D3CA;}
+.process-box:last-child{margin-bottom: 4px;}
+.process-tit{height: 20px;line-height: 20px;width: 100%;background: #6F9026;color: #FFFFFF;text-align: center;}
+.process-tit h1{font-weight: bold;font-size: 12px;}
+.process-tit h2{font-weight: normal;font-size: 12px;}
+.btn{display: block;-webkit-tap-highlight-color:rgba(130,130,130,.52);background-color: #EE8D31;height: 38px;text-align: center;line-height: 38px;border-radius: 5px;color: #FFFFFF;font-size: 15px;font-weight: bold;box-shadow: 0 4px 0 #EE7831;margin: 20px 57px;}
+.link-mod-1,.link-mod-2{background: url(/payactres/zh_CN/htmledition/images/mobile/wxzf_Unicom/link267054.png) no-repeat;-webkit-background-size: 5px 23px;background-size: 5px 23px;width: 5px;height: 23px;position: absolute;margin-top: -9px;}
+.link-mod-1{left: 24px;}
+.link-mod-2{right: 24px;}
+.hblc-box{padding: 14px 12px 7px;overflow: hidden;}
+.hblc-div{width: 55px;}
+.hblc-div:last-child{margin-right: 0;}
+.hblc-div div{background: url(/payactres/zh_CN/htmledition/images/mobile/wxzf_Unicom/pic267054.jpg) no-repeat;width:55px;height:99px;text-indent: -9999px;-webkit-background-size: 55px auto;background-size: 55px auto;overflow: hidden;}
+.hblc-div .method-1{background-position: 0 0;}
+.hblc-div .method-2{background-position: 0 -99px;}
+.hblc-div .method-3{background-position: 0 -198px;}
+.hblc-div .method-4{background-position: 0 -297px;}
+.hblc-div img{width: 100%;}
+.hblc-xh{display: block;color: #FFFFFF;font-size: 8px;width: 11px;height: 11px;line-height: 10px;border-radius: 6px;background: #F06A42;text-align: center;margin: 7px auto 3px;}
+.hblc-sm{font-size: 12px;color: #59493F;text-align: center;padding-bottom: 2px;}
+.rule-box{padding: 12px 6px 16px;}
+.rule-num{display: block;position: absolute;margin-top: 1px;width: 10px;height: 10px;line-height: 10px;border-radius: 5px;background: #647C2B;color: #FFFFFF;font-size: 6px;text-align: center;}
+.rule-box ul li{padding-bottom: 8px;}
+.rule-box ul li p{margin-left: 12px;font-size: 12px;color: #3E5014;}
+.rule-box ul li p a{color: #3E5014;}
+.bottom-box{width: 100%;padding-bottom: 19px;}
+.bottom-box img{width: 100%;}
